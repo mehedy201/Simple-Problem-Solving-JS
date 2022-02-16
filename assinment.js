@@ -1,8 +1,8 @@
 // Problem: 1
 function anaToVori (ana){
     const vori = ana / 16;
-    if (vori > 10){
-        const sorry ='Ami 10 vorir beshi shona kinbona........'
+    if (vori < 0){
+        const sorry ='Please input ana........'
         return sorry;
     }
     return vori;
@@ -22,8 +22,8 @@ function pandaCost (singaraQuantity, shomoshaQuantity, gilapiQuantity){
     const gilapiPriceQuantity = gilapiQuantity * gilapiPrice;
 
     const totalPrice = singaraPriceQuantity + shomoshaPriceQuantity + gilapiPriceQuantity;
-    if (totalPrice > 100){
-        const sorryFood = 'Ami Gorib Manus. Ami 100 takar beshi hole khete Parbona........'
+    if (totalPrice < 0){
+        const sorryFood = 'Some order please!!!!!!........'
         return sorryFood;
     }
     return totalPrice;
